@@ -78,6 +78,16 @@
 - it will maintain the exact versions of the dependencies 
 - If we have package.json and package-lock.json we can recreate all the node modules  (npm install)
 
+## HOW DO WE IGNITE OUR APP? USING PARCEL
+- **npx parcel <sourcefile>**       npx parcel index.html
+- npx --> executing a package
+- npm --> install a package 
+  output: Server running at http://localhost:1234
+          ✨ Built in 7.31s
+    
+- Parcel created a server for us , as when we deploy our app it will run on the server and will be there on a Port , in the same way parcel created a server for our app
+- Parcel will go to the sourcefile and build a development environment
+
 
 
 
