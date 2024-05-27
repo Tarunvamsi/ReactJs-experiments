@@ -100,7 +100,7 @@ in index.hmtl we are injection the app.js so it(browser) treats this as a normal
 - So to tell the browser that it is a module 
 - <script type="module" src="App.js"></script>
   
-# Parcel background work -> scenes behind the parcel (gives energy to our app)  (parcel documentation)[https://parceljs.org]
+# Parcel background work 🔥🔥🧨-> scenes behind the parcel (gives energy to our app)  (parcel documentation)[https://parceljs.org]
 - builds Devolepment Build
 - Creates a local server
 - Makes a Hot reloading --HMR -Hot module replacement --> we we change any thing in code and save the file it will automatically read and reload the page
@@ -116,7 +116,27 @@ in index.hmtl we are injection the app.js so it(browser) treats this as a normal
 - Better error handling and suggestions 
 - Also gives feature to host on HTTPS   (npx parcel index.html --https)
 - Tree shaking --> in our whole code we have 100 functions and we are using 4-5 functions , parcel will remove unused code for us (extra random code)
+- Different dev and prod bundles  --> production build have more optimiations compared to dev build
 
+# How to create PROD build?
+- npx parcel build index.html      (add build to get PROD Build) 
+-  //we will get an error because we have main:App.js in package.json but we are specifying index.html in parcel command , so remove main in package.json 
+- Where does the build goes? *it will go to the dist folder* 
+- dist folder contains -->  npx parcel build index.html genertaes the dev build of project and hosted on port , it put its it in dist folder 
+  
+  # When we open and see the files in dist folder 
+  - index.hmtl , app.js etc.. we will see that code is something not understanbale because parcel compress the code , minify the code and remove all the white spaces , it also change the names of variables to compress the code 
+  
+  # Why we dont upload node modules or dist or parcel-cache to git?
+  - when we hosted our web page on server , server fetch the code from git not from local 
+  - All the commands that we run in our local like npx build etc will be run in the server also
+  - The server will fetch package.json and install in the server 
+  - the copy of node modules in local is different from server nodemodules
+  - so it will do npm install on server and get the own node modules and own dist folder 
 
+# Lets make our app compatible for the old browsers !! 🌐🔥 (https://browserslist.dev)  --> we can also give country specific also 
+
+-  in package.json add something called browserslist
+-  "browserslist": ["last 100 chrome versions", "last 10 versions of firefox",....]
 
 
