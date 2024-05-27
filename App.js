@@ -9,5 +9,5 @@ const root = ReactDOM.createRoot(document.getElementById("root")); //creating ro
 
 root.render(heading); //take object and convert the heading tag and put in the DOM - rendering
 
-
+//everything will be replaced even if we have something in html file when we pass to render 
 
