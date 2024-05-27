@@ -8,3 +8,6 @@
 
 - create Reactapp  - already ignited , it has all the super powers 
 ## lets understand what happens and how to create own create react app - production ready app , instead of using already existing one
+
+- npm - npm is everything except node package manager😂  -->  go to [npm official website](npmjs.com) and click on the ❤ to see what npm is 🚀
+
