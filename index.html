@@ -18,8 +18,18 @@
 
     <!-- writing first react code  -->
 
-    
+
     <script>
+        // createElement takes 3 args - 1)tag we want to create 2)object 3) what we want to put in tag
+        const heading = React.createElement("h1",{},"Hello react !!"); 
+        
+        //putting the heading to the root in html to render the heading 
+        const root = ReactDOM.createRoot(document.getElementById("root"));  //creating root inside react is job of DOM to render the content in the browser to put content
+
+        root.render(heading);   //rendering in browser
+
+
+    
 
     </script>
 </body>
