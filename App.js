@@ -1,3 +1,5 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
 // createElement takes 3 args - 1)tag we want to create 2)object 3) what we want to put in tag
 //object : give attribute to our tags
 const heading = React.createElement("h1", { id: "heading" }, "Hello react !!"); //heading is an react elemnt which is js object

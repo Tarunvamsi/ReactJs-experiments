@@ -88,6 +88,35 @@
 - Parcel created a server for us , as when we deploy our app it will run on the server and will be there on a Port , in the same way parcel created a server for our app
 - Parcel will go to the sourcefile and build a development environment
 
+##   Installing React :: npm install react 
+- we have cdn links , but what if the react version get s updated , we need to change the links manually 
+- to avoid such problem , we will install react pacakage from npm library using "npm install react"
+- *we have installed react , now how to use that react in our code?*
+- import React from "react";      --> "react" :: this is the refernce to the react folder in node modules
+- import ReactDOM from "react-dom";
+![error when imported react]](image.png)
+
+in index.hmtl we are injection the app.js so it(browser) treats this as a normal javascript file , normal js file do not have any imports
+- So to tell the browser that it is a module 
+- <script type="module" src="App.js"></script>
+  
+# Parcel background work -> scenes behind the parcel (gives energy to our app)  (parcel documentation)[https://parceljs.org]
+- builds Devolepment Build
+- Creates a local server
+- Makes a Hot reloading --HMR -Hot module replacement --> we we change any thing in code and save the file it will automatically read and reload the page
+- Parcel uses a *File Watching algorithm* - written in C++ ( keeps eye on all the files and track every save and build it once again)
+- Faster Builds whenever we save  - because of *Caching* in .parcel-cache --> caching everything we do to get faster dev experience
+- Image Optimization 
+- If we do production build - it will minification --> it will do bundling the code
+- compress the files during production build --> remove all whitespaces , etc and ship to production 
+- Consistent Hashing 
+- code splitting
+- Differential Bundling  -- when app is hosted , our app can be opened inside internet explorer , chrome , firefox etc ... parcel takes care off all that , so that app can run smoothly on older browsers also 
+- Diagnostice behind the scenes 
+- Better error handling and suggestions 
+- Also gives feature to host on HTTPS   (npx parcel index.html --https)
+- Tree shaking --> in our whole code we have 100 functions and we are using 4-5 functions , parcel will remove unused code for us (extra random code)
+
 
 
 

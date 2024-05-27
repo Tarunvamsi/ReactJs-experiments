@@ -1,4 +1,5 @@
-
+import React from "react";
+import ReactDOM from "react-dom/client";
 /* <div id="parent">
     <div id="child">
         <h1>i am from nested h1 tag </h1>
