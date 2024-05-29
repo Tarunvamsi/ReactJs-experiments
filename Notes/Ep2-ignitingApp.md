@@ -125,7 +125,7 @@ in index.hmtl we are injection the app.js so it(browser) treats this as a normal
 - dist folder contains -->  npx parcel build index.html genertaes the dev build of project and hosted on port , it put its it in dist folder 
   
   # When we open and see the files in dist folder 
-  - index.hmtl , app.js etc.. we will see that code is something not understanbale because parcel compress the code , minify the code and remove all the white spaces , it also change the names of variables to compress the code 
+  - index.hmtl , app.js etc.. we will see that code is something not understanbale because parcel compress the code , minify the code and remove all the white spaces , it also change the names of variables to compress the code
   
   # Why we dont upload node modules or dist or parcel-cache to git?
   - when we hosted our web page on server , server fetch the code from git not from local 
