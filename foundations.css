@@ -1,0 +1,9 @@
+#button_start{
+    color: rgb(255, 255, 255);
+    font-size: larger;
+    size: 10pt;
+    align-items: center;
+    background-color: brown;
+    width: 90px;
+    margin-top: auto;
+}
