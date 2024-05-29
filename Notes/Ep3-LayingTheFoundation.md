@@ -76,16 +76,53 @@ After React , these three merged into a single file
 - If we want to give attributes in JSX we need to give camelcase (className, tabIndex)
 
 - # Single Line jsx 
-- const heading = <h1> this is JSX </h1>;
+
+        const heading = <h1> this is JSX </h1>;
 
 - # Multiple Line jsx syntax
-- const heading = ( <h1> 
-- this is jsx multiple line syntax 
-- </h1>);                
+                const heading = ( <h1> 
+                this is jsx multiple line syntax 
+                </h1>);                
 - *We need to wrap the jsx code in paranthesis() to make babel understand where the jsx code starts and where the code ends*
 
 
 ## React Components🚀💻
+
+- Everything is a component in React
+- Heading , footer , title , button , nav bar , text box etc bla bla ...
+
+  **Two types of components in React**
+  - class based component ( old way of writing code , nobody uses)
+  - Functional Component (New way of writing code)
+
+## React Functional Component 
+- React functional component is just a Javascript Function 
+- When Creating a component in React start with  a captial letter oterwise error , this the way of understaing react 
+
+- Function which is returning a react element it will become a functional component 
+- Function returing a jsx code element is a functional component 
+
+
+- React functional component
+
+        const Heading= () =>{
+            return <h1> This a React functional component heading</h1>
+        };
+
+- otherway of writing above code , simple syntax
+
+        const Heading1= () =>( 
+            <h1> This a React functional component heading</h1>);
+
+# Rendering syntax for react elements and react components
+
+- rendering react element
+root.render(heading); 
+  - takes the react element object and  converts to html and push it to browser i.e, replace everything inside the root
+
+- rendering react component
+
+  - root.render(<Heading />);
 
 
 

@@ -16,6 +16,26 @@ console.log(heading);
 const jsxHeading = <h1 id="heading" tabIndex="5">I am heading from the JSX , makes your life easy </h1>
 console.log(jsxHeading);
 
+
+
+
+//React functional component
+
+const Heading= () =>{
+    return <h1> This a React functional component heading</h1>
+};
+
+//otherway of writing above code , simple syntax
+const Heading1= () => (
+    <div id="container">
+<h1> This a React functional component heading</h1>)
+</div>);
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(jsxHeading); //takes the react element object and  converts to html and push it to browser i.e, replace everything inside the root
+//rendering react element
+root.render(heading); //takes the react element object and  converts to html and push it to browser i.e, replace everything inside the root
+
+//rendering react component
+
+root.render(<Heading />);
