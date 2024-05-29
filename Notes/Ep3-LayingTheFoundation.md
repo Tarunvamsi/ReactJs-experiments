@@ -124,6 +124,51 @@ root.render(heading);
 
   - root.render(<Heading />);
 
+# component composition? 
+- composing 2 components into a single component
+
+        const Heading1= () => (
+            <div id="container">
+            <h1> This a React functional component head
+            <Title /> //composition
+            </div>);
+
+# Amazing super power of jsx- {};
+
+{} - using these bracktes , we can write any javascript code inside and we can compute any value or any js code
+
+        const number = 1000;
+        const Heading1= () => (
+            <div id="container">
+            <h2>{number}</h2>
+            <h1>{100+300}</h1>
+            <h1> This a React functional component head
+            <Title /> //composition
+            </div>);
+
+# how to put react element inside react component            
+
+        const Heading1= () => (
+        <div id="container">
+      
+        {/* Amazing super power of jsx- {}; */} 
+        {/* we can write any javascript code inside and we can compute any value or any js code*/} 
+        <h1>{100+505}</h1>
+        <h2>{number}</h2>  
+        {jsxHeading}   {/*react element inside a react component*/}
+        <h1> This a React functional component heading</h1>
+        <Title />
+        </div>);
+
+    *con: Cross site scripting*
+    Attacker can send any malacious code and get the access to the information of our laptop if we run javascript in our browser 
+
+    But this will he gandled by jsx {} - these braces will sanitize everything we Pass in , so that no body can do anything using loop hole , react and JSX will handle this situation
+
+
+    
+
+
 
 
 

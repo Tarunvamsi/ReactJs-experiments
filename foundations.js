@@ -25,10 +25,23 @@ const Heading= () =>{
     return <h1> This a React functional component heading</h1>
 };
 
+const Title = () => {
+    return <h2> React Title Component</h2>
+};
+const number = 1000;
 //otherway of writing above code , simple syntax
 const Heading1= () => (
     <div id="container">
-<h1> This a React functional component heading</h1>)
+      
+    {/* Amazing super power of jsx- {}; */} 
+    {/* we can write any javascript code inside and we can compute any value or any js code*/} 
+    <h1>{100+505}</h1>
+    <h2>{number}</h2>  
+    {jsxHeading}   {/*react element inside a react component*/}
+<h1> This a React functional component heading</h1>
+<Title />
+<Title></Title>
+{Title()}
 </div>);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -38,4 +51,4 @@ root.render(heading); //takes the react element object and  converts to html and
 
 //rendering react component
 
-root.render(<Heading />);
+root.render(<Heading1 />);
