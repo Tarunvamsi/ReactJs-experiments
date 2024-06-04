@@ -25,3 +25,18 @@ Routing between different web pages
 
 - import { useRouteError } from "react-router-dom";
 - To handle the error efficiently and customized error page
+- -An < Outlet> should be used in parent route elements to render their child route elements. This allows nested UI to show up when child routes are rendered. If the parent route matched exactly, it will render a child index route or nothing if there is no index route.
+
+- - Never Use anchor tag in react to navgiate through pages , beacuase anchor tag will rerender the whole page again when navigated
+
+- Instead use _Link_ from React router Dom -> it works same as anchor tag , Link will not make rerender the whole page, it will just replace the content
+
+- Two types of routinf in Web Applications
+
+  - Client Side Routing -> It will load all the components when we be loaded for the 1st time , and it will replace that component , it wont send any network call , (only network call is calling API)
+
+  - Server Side Routing -> we have differnet files for each page , when we click anchor tag will send a request and gets the data and renders the UI and refresh the whole page
+
+- _Single page application_ --> means client side routing , just replacing the components ,not making any network calls
+
+# Dynamic Routing
