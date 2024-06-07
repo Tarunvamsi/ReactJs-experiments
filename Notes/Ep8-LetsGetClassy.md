@@ -91,3 +91,27 @@
 - Dom manipulation is one of the most costly operation which will take time
 - Render phase is soo fast , so it will batch
 - Then the commit phase will happen-> expensive operations(DOM manipulation)
+
+- _Mounting cycle_ will finish once the component is renderred once with dummy data
+- When we do the setState() updating phase will start
+  - the state variable will be updated
+    - react trigger the render once again (state variable will be changed with updated value)
+      - Now react will update the DOM with new value
+- Now UPDATE CYCLE Will call ComponentDidUpdate()
+
+- ------Mounting cycle ---------
+- Constructor(dummy data)
+- Render (dummy)
+  - < HTML (Dummy data)>
+- Component Did mount
+  - < API call>
+  - <this.setstate>' --> satte variable is updated
+- -------- Update Cycle ----------
+  - Render method is called(API data)
+  - < HTML is Loaded with new API data >
+  - Componenet DidUpdate called
+-
+
+- **ComponentWillUnmount()** --> called before unmounting --> removinf from the UI --> we we navigate between the pages
+
+- Earlier we were used all of these , now we are just using useEffect
