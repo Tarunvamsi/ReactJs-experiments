@@ -61,3 +61,15 @@
 - Any where in the app , we can use context provider , we can override the default value (if we wrapped the whole app in context provider , then every where the value changes)
 
 - **Context is a global space , we can provide for the whhole app or a part of the app , and we can override the default data**
+
+**REDUX** -- Data Management Library
+
+- When we use redux , we domt need context in react
+- Redux is a central store where we can access the data
+- Diff redux vs useContext
+  - Redux is not come with react --> it is a state managmenet libarary
+  - In small applications we no need redux , context is enough
+  - In large apps also context is powerful , but in industry they use redux because redux is scalable
+  - For context , we can create diff type of contexts and build large scale applications
+
+### STATE MANAGEMENT AND DATAMANAGEMENT ARE MOST IMPORTANT IN REACT
