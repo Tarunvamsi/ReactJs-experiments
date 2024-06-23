@@ -65,3 +65,5 @@
 - Redux behind the scenes uses "IMMER"
 - IMMER --> Takes the exisiting state and take the new state amd calcualte the differnece and gives the new state to the redux
 - Redux Tool kit --> either mutate the exiasting state or return the new state(replace whatever there in original state)
+
+**READ ABOUT RTK QUERY** --> Earlier --> MIDDLEWARES, REDUX THUNK
