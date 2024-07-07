@@ -40,6 +40,13 @@
 
 - create .parcelrc and make comfiguration (refer parcel docs)
 
+- Install @babel/preset-react --> to make JSX default babel transpilation
+- Include @babel/preset-react inside babel config and runtime as automatic
+
+           [("@babel/preset-react", { runtime: "automatic" })],
+
+- Install @testing-library/jest-dom --> toBeInTheDocument
+
 ##### Jest configuration
 
 - npx jest --init
@@ -58,3 +65,7 @@
                     expect(result).toBe(7)      //Assertion
 
                     })
+
+- Beauty of the JEST is it will show you whatever is rendered when the test case failes
+
+- Use Describe to group the test cases
